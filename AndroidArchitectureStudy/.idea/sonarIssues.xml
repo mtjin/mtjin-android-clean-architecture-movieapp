@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NaverLoginSample/RealNaverLogin/.idea/sonarIssues.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NaverLoginSample/RealNaverLogin/app/src/main/java/com/example/realnaverlogin/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/api/ApiClient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/api/ApiInterface.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/home/Lodgment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/home/Product.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduce.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduceBody.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduceHeader.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduceList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduceResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/TourIntroduceResponseBody.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/source/LocalPageRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/local_page/source/LocalPageRepositoryImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/data/login/User.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/module/ApiModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/module/RepositoryModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/module/ViewModelModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/utils/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/ViewDatabindingAdapters.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/email_signup/HomeLodgeAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/home/HashTagAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/home/HomeLodgeAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/home/HomeProductAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/localpage/LocalPageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/localpage/LocalPageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/java/com/mtjin/nomoneytrip/views/localpage/LocalPageViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/drawable-v24/bg_hash_tag_orange_radius_8dp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/drawable/bg_gray_radius_8dp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/drawable/bg_hash_tag_gray_radius_8dp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/drawable/bg_item_product_radius_16dp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_alarm.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_community.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_dialog_yes_no.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_local_page.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_lodge_search.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_lodgement_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_lodgment_complete.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_my_tour_diary.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_order_bottom_dialog.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_profile.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_reservation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_save_tour_diary.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_tour_history.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/fragment_tour_write.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_alarm.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_guide_tour.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_hash_tag.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_local_product.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_lodgement_review.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_lodgment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_my_tour_diary.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_product.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_thank_letter.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_tour_history.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_tour_introduce.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/layout/item_user_review.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/menu/bottom_menu.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../NoMoneyTrip/NoMoneyTrip/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mtjin/androidarchitecturestudy/di/KoinApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/mtjin/androidarchitecturestudy/ui/search/MovieSearchViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/build/generated/source/buildConfig/debug/com/example/worksmettingroomreservation/BuildConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/api/ApiInterface.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/data/reservation/source/ReservationRepositoryImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/data/reservation/source/remote/ReservationRemoteDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/data/reservation/source/remote/ReservationRemoteDataSourceImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/di/MyApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/di/data/ApiModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/di/data/RemoteDataModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/service/MyFirebaseMessagingService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/service/NotificationBroadcastReceiver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/service/NotificationData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/service/ScheduledWorker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/utils/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/utils/NotificationUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/utils/TimeConverter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/views/ViewDataBindingAdapters.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/views/login/LoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/views/profile/ProfileFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/views/profile/ProfileViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/java/com/example/worksmettingroomreservation/views/reservation/ReservationViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/res/layout/fragment_login.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/res/layout/fragment_profile.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-metting-room-reservation/WorksMettingRoomReservation/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../works-room-reservation-tablet/TabletReservation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
