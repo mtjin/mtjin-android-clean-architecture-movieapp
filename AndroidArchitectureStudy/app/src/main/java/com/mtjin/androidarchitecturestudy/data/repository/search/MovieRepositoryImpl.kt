@@ -4,8 +4,8 @@ import com.mtjin.androidarchitecturestudy.data.model.search.Movie
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieLocalDataSource
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieRemoteDataSource
 import com.mtjin.androidarchitecturestudy.domain.repository.MovieRepository
-import com.mtjin.androidarchitecturestudy.presention.utils.LAST_PAGE
-import com.mtjin.androidarchitecturestudy.presention.utils.NO_DATA_FROM_LOCAL_DB
+import com.mtjin.androidarchitecturestudy.utils.LAST_PAGE
+import com.mtjin.androidarchitecturestudy.utils.NO_DATA_FROM_LOCAL_DB
 import io.reactivex.Flowable
 import io.reactivex.Single
 

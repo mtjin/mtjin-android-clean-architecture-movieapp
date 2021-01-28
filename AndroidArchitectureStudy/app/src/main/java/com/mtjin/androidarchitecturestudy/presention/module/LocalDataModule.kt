@@ -7,7 +7,7 @@ import com.mtjin.androidarchitecturestudy.data.db.MovieDao
 import com.mtjin.androidarchitecturestudy.data.db.MovieDatabase
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieLocalDataSource
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSourceImpl.MovieLocalDataSourceImpl
-import com.mtjin.androidarchitecturestudy.presention.utils.PreferenceManager
+import com.mtjin.androidarchitecturestudy.utils.PreferenceManager
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
