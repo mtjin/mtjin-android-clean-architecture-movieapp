@@ -20,6 +20,9 @@
 
 <img src="https://user-images.githubusercontent.com/37071007/106156645-23159280-61c5-11eb-8add-14383e827487.png">
 
+
+[출처](https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29) 
+
 위 사진의 아키텍처를 따르며 DataSource 로는 **로컬 DB, 캐시, 서버 DB** 로 구성 및 구현했다가 이 프로젝트에서는 캐시 데이터소스로 얻는 단점과 필요성이 적어 제거하게 되었습니다.
 
 화면별 패키지는 splash, login, search가 있으며 **영화검색(search패키지) 위주로 구현**합니다.
@@ -30,7 +33,7 @@
 
 ---
 
-1차 : Clean MVVM + RxJava2 + Koin (하는중) [ clean-mvvm-rxjava-koin 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-koin)
+1차 : Clean MVVM + RxJava2 + Koin (하는중) [clean-mvvm-rxjava-koin 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-koin)
 
 2차 : 모듈나누기 (멀티모듈)
 
