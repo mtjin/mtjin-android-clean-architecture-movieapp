@@ -3,6 +3,7 @@ package com.mtjin.androidarchitecturestudy.presention.views.search
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.domain.usecase.GetLocalMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetPagingMoviesUseCase
 import com.mtjin.androidarchitecturestudy.presention.base.BaseViewModel
@@ -14,6 +15,7 @@ import io.reactivex.schedulers.Schedulers
 open class MovieSearchViewModel(
     private val getMoviesUseCase: GetMoviesUseCase,
     private val getPagingMoviesUseCase: GetPagingMoviesUseCase,
+    private val getLocalMoviesUseCase: GetLocalMoviesUseCase,
     private val networkManager: NetworkManager
 ) : BaseViewModel() {
 
@@ -28,29 +30,29 @@ open class MovieSearchViewModel(
 
     // 영화검색 (15개)
     fun requestMovie() {
-        if (!checkNetworkState()) return //네트워크연결 유무
         currentQuery = query.value.toString().trim()
         if (currentQuery.isEmpty()) {
             _toastMsg.value = MessageSet.EMPTY_QUERY
-        } else {
-            compositeDisposable.add(
-                getMoviesUseCase.execute(currentQuery)
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .doOnSubscribe { showProgress() }
-                    .doAfterTerminate { hideProgress() }
-                    .subscribe({ movies ->
-                        if (movies.isEmpty()) {
-                            _toastMsg.value = MessageSet.NO_RESULT
-                        } else {
-                            _movieList.value = movies as ArrayList<Movie>
-                            _toastMsg.value = MessageSet.SUCCESS
-                        }
-                    }, {
-                        _toastMsg.value = MessageSet.ERROR
-                    })
-            )
+            return
         }
+        if (!checkNetworkState()) return //네트워크연결 유무
+        compositeDisposable.add(
+            getMoviesUseCase.execute(currentQuery)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .doOnSubscribe { showProgress() }
+                .doAfterTerminate { hideProgress() }
+                .subscribe({ movies ->
+                    if (movies.isEmpty()) {
+                        _toastMsg.value = MessageSet.NO_RESULT
+                    } else {
+                        _movieList.value = movies as ArrayList<Movie>
+                        _toastMsg.value = MessageSet.SUCCESS
+                    }
+                }, {
+                    _toastMsg.value = MessageSet.ERROR
+                })
+        )
     }
 
     // 검색한 영화 더 불러오기(페이징, 무한스크롤)
@@ -80,9 +82,29 @@ open class MovieSearchViewModel(
         return if (networkManager.checkNetworkState()) {
             true
         } else {
-            _toastMsg.value = MessageSet.NETWORK_NOT_CONNECTED
+            requestLocalMovies()
             false
         }
+    }
+
+    private fun requestLocalMovies() {
+        compositeDisposable.add(
+            getLocalMoviesUseCase.execute(currentQuery)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .doOnSubscribe { showProgress() }
+                .doAfterTerminate { hideProgress() }
+                .subscribe({ movies ->
+                    if (movies.isEmpty()) {
+                        _toastMsg.value = MessageSet.NETWORK_NOT_CONNECTED
+                    } else {
+                        _movieList.value = movies as ArrayList<Movie>
+                        _toastMsg.value = MessageSet.LOCAL_SUCCESS
+                    }
+                }, {
+                    _toastMsg.value = MessageSet.NETWORK_NOT_CONNECTED
+                })
+        )
     }
 
     enum class MessageSet {
@@ -91,6 +113,9 @@ open class MovieSearchViewModel(
         NETWORK_NOT_CONNECTED,
         ERROR,
         SUCCESS,
-        NO_RESULT
+        NO_RESULT,
+        LOCAL_SUCCESS
     }
+
 }
+

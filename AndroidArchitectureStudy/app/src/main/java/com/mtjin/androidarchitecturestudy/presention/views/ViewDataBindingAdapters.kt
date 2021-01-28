@@ -33,7 +33,7 @@ fun RatingBar.setMovieRating(score: String) {
 }
 
 @BindingAdapter("setItems")
-fun RecyclerView.setAdapterItems(items: List<Movie>?) {
+fun RecyclerView.setAdapterItems(items: MutableList<Movie>?) {
     items?.let {
         (adapter as MovieAdapter).submitList(it.toMutableList())
     }

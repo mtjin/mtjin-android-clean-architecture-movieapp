@@ -25,8 +25,7 @@ class KoinApplication : Application() {
                 networkModule,
                 viewModelModule,
                 apiModule,
-                useCaseModule,
-                cacheDataModule
+                useCaseModule
             )
 
         }

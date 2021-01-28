@@ -2,7 +2,6 @@ package com.mtjin.androidarchitecturestudy.data.model.search
 
 
 import com.google.gson.annotations.SerializedName
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
 
 data class MovieResponse(
     @SerializedName("display")

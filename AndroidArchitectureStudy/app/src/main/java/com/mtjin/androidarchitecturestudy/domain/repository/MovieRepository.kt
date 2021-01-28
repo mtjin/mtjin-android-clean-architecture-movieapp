@@ -9,6 +9,10 @@ interface MovieRepository {
         query: String
     ): Flowable<List<Movie>>
 
+    fun getLocalSearchMovies(
+        query: String
+    ): Flowable<List<Movie>>
+
     fun getRemoteSearchMovies(
         query: String
     ): Single<List<Movie>>

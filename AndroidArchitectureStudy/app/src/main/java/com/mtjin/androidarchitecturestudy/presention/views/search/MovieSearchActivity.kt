@@ -5,8 +5,8 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.mtjin.androidarchitecturestudy.R
-import com.mtjin.androidarchitecturestudy.presention.base.BaseActivity
 import com.mtjin.androidarchitecturestudy.databinding.ActivityMovieSearchBinding
+import com.mtjin.androidarchitecturestudy.presention.base.BaseActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -41,6 +41,7 @@ class MovieSearchActivity :
                     MovieSearchViewModel.MessageSet.SUCCESS -> showToast(getString(R.string.load_movie_success_msg))
                     MovieSearchViewModel.MessageSet.NO_RESULT -> showToast(getString(R.string.no_movie_error_msg))
                     MovieSearchViewModel.MessageSet.ERROR -> showToast(getString(R.string.error_msg))
+                    MovieSearchViewModel.MessageSet.LOCAL_SUCCESS -> showToast(getString(R.string.local_db_msg))
                 }
             })
         }
