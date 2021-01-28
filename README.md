@@ -1,1 +1,2 @@
-# mtjin-android-clean-rchitecture-movieapp
+# 안드로이드 클린아키텍처 공부 및 네이버 영화검색 앱으로 구현해보자
+
