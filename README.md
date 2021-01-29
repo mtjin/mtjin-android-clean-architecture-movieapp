@@ -33,9 +33,9 @@
 
 ---
 
-1차 : Clean MVVM + RxJava2 + Koin (하는중) [clean-mvvm-rxjava-koin 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-koin)
+1차 : Clean MVVM + RxJava2 + Koin [clean-mvvm-rxjava-koin 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-koin)
 
-2차 : 모듈나누기 (멀티모듈)
+2차 : 1차에서 모듈나누기 (하는중) [clean-mvvm-multi-module 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-multi-module)
 
 3차 : Koin → Dagger2 로 변경
 
