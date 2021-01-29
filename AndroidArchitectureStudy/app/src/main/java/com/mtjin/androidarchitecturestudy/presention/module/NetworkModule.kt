@@ -1,6 +1,6 @@
 package com.mtjin.androidarchitecturestudy.presention.module
 
-import com.mtjin.androidarchitecturestudy.utils.NetworkManager
+import com.mtjin.androidarchitecturestudy.presention.utils.NetworkManager
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
