@@ -1,6 +1,6 @@
 package com.mtjin.androidarchitecturestudy.data.repository.login
 
-import com.mtjin.androidarchitecturestudy.data.repository.login.dataSource.LoginLocalDataSource
+import com.mtjin.androidarchitecturestudy.data.repository.login.local.LoginLocalDataSource
 import com.mtjin.androidarchitecturestudy.domain.repository.LoginRepository
 
 class LoginRepositoryImpl(private val loginLocalDataSource: LoginLocalDataSource) :

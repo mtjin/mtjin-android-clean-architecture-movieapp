@@ -1,7 +1,6 @@
-package com.mtjin.androidarchitecturestudy.data.repository.login.dataSourceImpl
+package com.mtjin.androidarchitecturestudy.data.repository.login.local
 
-import com.mtjin.androidarchitecturestudy.data.repository.login.dataSource.LoginLocalDataSource
-import com.mtjin.androidarchitecturestudy.presention.utils.PreferenceManager
+import com.mtjin.androidarchitecturestudy.utils.PreferenceManager
 
 class LoginLocalDataSourceImpl(private val preferenceManager: PreferenceManager) :
     LoginLocalDataSource {

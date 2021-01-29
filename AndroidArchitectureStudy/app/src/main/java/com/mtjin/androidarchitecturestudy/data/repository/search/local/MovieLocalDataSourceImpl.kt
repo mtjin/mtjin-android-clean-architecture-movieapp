@@ -1,8 +1,7 @@
-package com.mtjin.androidarchitecturestudy.data.repository.search.dataSourceImpl
+package com.mtjin.androidarchitecturestudy.data.repository.search.local
 
 import com.mtjin.androidarchitecturestudy.data.db.MovieDao
 import com.mtjin.androidarchitecturestudy.data.model.search.MovieEntity
-import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieLocalDataSource
 import io.reactivex.Completable
 import io.reactivex.Single
 

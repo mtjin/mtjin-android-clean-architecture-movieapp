@@ -1,8 +1,7 @@
-package com.mtjin.androidarchitecturestudy.data.repository.search.dataSourceImpl
+package com.mtjin.androidarchitecturestudy.data.repository.search.remote
 
 import com.mtjin.androidarchitecturestudy.data.api.ApiInterface
 import com.mtjin.androidarchitecturestudy.data.model.search.MovieResponse
-import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieRemoteDataSource
 import io.reactivex.Single
 
 

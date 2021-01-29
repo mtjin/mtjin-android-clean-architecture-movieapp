@@ -1,4 +1,4 @@
-package com.mtjin.androidarchitecturestudy.data.repository.search.dataSource
+package com.mtjin.androidarchitecturestudy.data.repository.search.local
 
 import com.mtjin.androidarchitecturestudy.data.model.search.MovieEntity
 import com.mtjin.androidarchitecturestudy.domain.model.search.Movie

@@ -7,8 +7,8 @@ import com.mtjin.androidarchitecturestudy.domain.usecase.GetLocalMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetPagingMoviesUseCase
 import com.mtjin.androidarchitecturestudy.presention.base.BaseViewModel
-import com.mtjin.androidarchitecturestudy.presention.utils.LAST_PAGE
-import com.mtjin.androidarchitecturestudy.presention.utils.NetworkManager
+import com.mtjin.androidarchitecturestudy.utils.LAST_PAGE
+import com.mtjin.androidarchitecturestudy.utils.NetworkManager
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 

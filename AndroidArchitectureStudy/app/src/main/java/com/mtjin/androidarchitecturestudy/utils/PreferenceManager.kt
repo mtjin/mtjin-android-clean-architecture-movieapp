@@ -1,4 +1,4 @@
-package com.mtjin.androidarchitecturestudy.presention.utils
+package com.mtjin.androidarchitecturestudy.utils
 
 import android.content.Context
 import android.content.SharedPreferences
