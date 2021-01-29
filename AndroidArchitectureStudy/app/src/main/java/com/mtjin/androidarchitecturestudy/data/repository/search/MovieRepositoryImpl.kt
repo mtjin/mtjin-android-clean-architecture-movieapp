@@ -1,8 +1,9 @@
 package com.mtjin.androidarchitecturestudy.data.repository.search
 
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.data.mapper.mapperToMovie
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieLocalDataSource
 import com.mtjin.androidarchitecturestudy.data.repository.search.dataSource.MovieRemoteDataSource
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 import com.mtjin.androidarchitecturestudy.domain.repository.MovieRepository
 import com.mtjin.androidarchitecturestudy.presention.utils.LAST_PAGE
 import com.mtjin.androidarchitecturestudy.presention.utils.NO_DATA_FROM_LOCAL_DB
@@ -24,7 +25,7 @@ class MovieRepositoryImpl(
                         .toFlowable()
                         .onErrorReturn { listOf() }
                 } else {
-                    val local = Single.just(localMovies) // 로컬 DB
+                    val local = Single.just(mapperToMovie(localMovies)) // 로컬 DB
                     val remote = getRemoteSearchMovies(query) // 서버 API
                         .onErrorResumeNext { local }
                     Single.concat(local, remote) // 순서대로 불러옴
@@ -40,7 +41,7 @@ class MovieRepositoryImpl(
                 if (cachedMovies.isEmpty()) {
                     Flowable.error(IllegalStateException(NO_DATA_FROM_LOCAL_DB))
                 } else {
-                    Flowable.just(cachedMovies)
+                    Flowable.just(mapperToMovie(cachedMovies))
                 }
             }
     }
@@ -52,7 +53,7 @@ class MovieRepositoryImpl(
         return movieRemoteDataSource.getSearchMovies(query)
             .flatMap {
                 movieLocalDataSource.insertMovies(it.movies)
-                    .andThen(Single.just(it.movies))
+                    .andThen(Single.just(mapperToMovie(it.movies)))
             }
     }
 
@@ -69,7 +70,7 @@ class MovieRepositoryImpl(
                     Single.error(IllegalStateException(LAST_PAGE))
                 } else {
                     movieLocalDataSource.insertMovies(it.movies)
-                        .andThen(Single.just(it.movies))
+                        .andThen(Single.just(mapperToMovie(it.movies)))
                 }
             }
         }

@@ -2,7 +2,7 @@ package com.mtjin.androidarchitecturestudy.presention.views.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetLocalMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetMoviesUseCase
 import com.mtjin.androidarchitecturestudy.domain.usecase.GetPagingMoviesUseCase

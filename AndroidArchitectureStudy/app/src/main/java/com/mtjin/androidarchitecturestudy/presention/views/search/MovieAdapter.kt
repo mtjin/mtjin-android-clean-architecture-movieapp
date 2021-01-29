@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.mtjin.androidarchitecturestudy.R
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
 import com.mtjin.androidarchitecturestudy.databinding.ItemMovieBinding
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 
 class MovieAdapter(private val itemClick: (Movie) -> Unit) :
     ListAdapter<Movie, MovieAdapter.ViewHolder>(

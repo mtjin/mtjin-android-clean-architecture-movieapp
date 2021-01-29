@@ -7,7 +7,7 @@ data class MovieResponse(
     @SerializedName("display")
     val display: Int,
     @SerializedName("items")
-    val movies: List<Movie>,
+    val movies: List<MovieEntity>,
     @SerializedName("lastBuildDate")
     val lastBuildDate: String,
     @SerializedName("start")

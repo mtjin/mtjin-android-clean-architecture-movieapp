@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mtjin.androidarchitecturestudy.R
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.data.model.search.MovieEntity
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 import com.mtjin.androidarchitecturestudy.presention.views.search.EndlessRecyclerViewScrollListener
 import com.mtjin.androidarchitecturestudy.presention.views.search.MovieAdapter
 import com.mtjin.androidarchitecturestudy.presention.views.search.MovieSearchViewModel

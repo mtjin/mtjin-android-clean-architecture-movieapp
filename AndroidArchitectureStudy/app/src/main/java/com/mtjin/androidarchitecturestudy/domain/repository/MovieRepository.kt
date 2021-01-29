@@ -1,6 +1,6 @@
 package com.mtjin.androidarchitecturestudy.domain.repository
 
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 import io.reactivex.Flowable
 import io.reactivex.Single
 

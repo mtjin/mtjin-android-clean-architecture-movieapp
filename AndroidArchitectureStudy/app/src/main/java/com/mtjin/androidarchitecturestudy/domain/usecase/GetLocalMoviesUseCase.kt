@@ -1,6 +1,6 @@
 package com.mtjin.androidarchitecturestudy.domain.usecase
 
-import com.mtjin.androidarchitecturestudy.data.model.search.Movie
+import com.mtjin.androidarchitecturestudy.domain.model.search.Movie
 import com.mtjin.androidarchitecturestudy.domain.repository.MovieRepository
 import io.reactivex.Flowable
 
