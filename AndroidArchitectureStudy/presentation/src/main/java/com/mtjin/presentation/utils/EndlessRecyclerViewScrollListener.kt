@@ -1,4 +1,4 @@
-package com.mtjin.presentation.views.search
+package com.mtjin.presentation.utils
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
