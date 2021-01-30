@@ -1,6 +1,6 @@
 package com.mtjin.data.repository.login.local
 
-import com.mtjin.domain.utils.PreferenceManager
+import com.mtjin.data.utils.PreferenceManager
 
 
 class LoginLocalDataSourceImpl(private val preferenceManager: PreferenceManager) :

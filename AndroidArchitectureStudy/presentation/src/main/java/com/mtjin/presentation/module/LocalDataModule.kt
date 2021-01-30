@@ -7,7 +7,7 @@ import com.mtjin.data.repository.login.local.LoginLocalDataSource
 import com.mtjin.data.repository.login.local.LoginLocalDataSourceImpl
 import com.mtjin.data.repository.search.local.MovieLocalDataSource
 import com.mtjin.data.repository.search.local.MovieLocalDataSourceImpl
-import com.mtjin.domain.utils.PreferenceManager
+import com.mtjin.data.utils.PreferenceManager
 import org.koin.core.module.Module
 import org.koin.dsl.module
 

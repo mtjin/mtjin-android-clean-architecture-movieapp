@@ -8,7 +8,7 @@ import com.mtjin.domain.usecase.GetMoviesUseCase
 import com.mtjin.domain.usecase.GetPagingMoviesUseCase
 import com.mtjin.presentation.base.BaseViewModel
 import com.mtjin.domain.utils.LAST_PAGE
-import com.mtjin.domain.utils.NetworkManager
+import com.mtjin.presentation.utils.NetworkManager
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
