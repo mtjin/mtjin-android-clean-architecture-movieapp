@@ -2,8 +2,9 @@ package com.mtjin.data.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import javax.inject.Inject
 
-class PreferenceManager(context: Context) {
+class PreferenceManager  @Inject constructor(context: Context) {
     private val autoLoginPref: SharedPreferences =
         context.getSharedPreferences(MOVIE_SEARCH_APP, Context.MODE_PRIVATE)
 
