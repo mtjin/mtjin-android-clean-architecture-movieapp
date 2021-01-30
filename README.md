@@ -37,9 +37,9 @@
 
 2차 : 1차에서 모듈나누기  [clean-mvvm-multi-module 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-multi-module)
 
-3차 : Koin → Dagger2 로 변경 (하는중)  [clean-mvvm-rxjava-dagger 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-dagger)
+3차 : Koin → Dagger2 로 변경   [clean-mvvm-rxjava-dagger 브랜치](https://github.com/mtjin/mtjin-android-clean-architecture-movieapp/tree/clean-mvvm-rxjava-dagger)
 
-추가사항 : 예외처리 + Unit Test
+추가사항 : 리펙토링 + 예외처리 + Unit Test ==> 현재 듣고 있는 Udemy 강의수강과 공부를 한 후 할 예정, 실력이 부족하여 공부가 많이 필요하다... ㅠ
 
 
 
