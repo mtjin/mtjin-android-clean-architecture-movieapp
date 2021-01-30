@@ -1,21 +1,32 @@
 package com.mtjin.presentation.views.search
 
+import MyApplication
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.mtjin.presentation.base.BaseActivity
+import androidx.lifecycle.ViewModelProvider
 import com.mtjin.presentation.R
+import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.databinding.ActivityMovieSearchBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import javax.inject.Inject
 
 
 class MovieSearchActivity :
     BaseActivity<ActivityMovieSearchBinding>(R.layout.activity_movie_search) {
     private lateinit var movieAdapter: MovieAdapter
-    private val viewModel: MovieSearchViewModel by viewModel()
+    lateinit var moveSearchComponent: MovieSearchComponent
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+    private val viewModel: MovieSearchViewModel by lazy {
+        ViewModelProvider(this, viewModelFactory).get(MovieSearchViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        moveSearchComponent =
+            (application as MyApplication).appComponent.movieSearchComponent().create()
+        moveSearchComponent.inject(this)
         super.onCreate(savedInstanceState)
         binding.vm = viewModel
         initViewModelCallback()
