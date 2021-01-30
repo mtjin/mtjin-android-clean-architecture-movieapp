@@ -1,6 +1,5 @@
 package com.mtjin.presentation.views.login
 
-import MyApplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -8,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.mtjin.presentation.R
 import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.databinding.ActivityLoginBinding
+import com.mtjin.presentation.di.MyApplication
 import com.mtjin.presentation.views.search.MovieSearchActivity
 import javax.inject.Inject
 

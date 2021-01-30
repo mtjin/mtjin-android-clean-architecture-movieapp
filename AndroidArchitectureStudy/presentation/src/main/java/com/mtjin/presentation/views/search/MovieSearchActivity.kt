@@ -1,7 +1,9 @@
 package com.mtjin.presentation.views.search
 
-import MyApplication
 import android.content.Intent
+import com.mtjin.presentation.di.MyApplication
+
+
 import android.net.Uri
 import android.os.Bundle
 import androidx.lifecycle.Observer

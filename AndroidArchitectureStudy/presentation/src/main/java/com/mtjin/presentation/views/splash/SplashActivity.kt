@@ -1,6 +1,5 @@
 package com.mtjin.presentation.views.splash
 
-import MyApplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -8,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.mtjin.presentation.R
+import com.mtjin.presentation.di.MyApplication
 import com.mtjin.presentation.views.login.LoginActivity
 import com.mtjin.presentation.views.search.MovieSearchActivity
 import javax.inject.Inject
