@@ -11,7 +11,6 @@ import com.mtjin.data.repository.search.local.MovieLocalDataSourceImpl
 import com.mtjin.data.utils.PreferenceManager
 import dagger.Module
 import dagger.Provides
-import dagger.Reusable
 import javax.inject.Singleton
 
 @Module
@@ -19,20 +18,20 @@ class LocalDataModule {
 
     //localRepo
     @Provides
-    @Reusable
+    @Singleton
     fun provideLoginLocalDataSource(preferenceManager: PreferenceManager): LoginLocalDataSource {
         return LoginLocalDataSourceImpl(preferenceManager)
     }
 
     @Provides
-    @Reusable
+    @Singleton
     fun provideMovieLocalDataSource(movieDao: MovieDao): MovieLocalDataSource {
         return MovieLocalDataSourceImpl(movieDao)
     }
 
     //room
     @Provides
-    @Reusable
+    @Singleton
     fun provideDatabase(context: Context): MovieDatabase {
         return Room.databaseBuilder(
             context,
@@ -43,14 +42,14 @@ class LocalDataModule {
     }
 
     @Provides
-    @Reusable
+    @Singleton
     fun provideMovieDao(movieDatabase: MovieDatabase): MovieDao {
         return movieDatabase.movieDao()
     }
 
     // sharedPref
     @Provides
-    @Reusable
+    @Singleton
     fun providePreferenceManager(context: Context): PreferenceManager {
         return PreferenceManager((context))
     }

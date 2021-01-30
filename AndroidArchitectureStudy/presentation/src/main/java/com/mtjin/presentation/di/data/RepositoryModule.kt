@@ -11,11 +11,12 @@ import com.mtjin.domain.repository.MovieRepository
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable
+import javax.inject.Singleton
 
 @Module
 class RepositoryModule {
     @Provides
-    @Reusable
+    @Singleton
     fun provideMovieRepository(
         movieRemoteDataSource: MovieRemoteDataSource,
         movieLocalDataSource: MovieLocalDataSource
@@ -24,7 +25,7 @@ class RepositoryModule {
     }
 
     @Provides
-    @Reusable
+    @Singleton
     fun provideLoginRepository(loginLocalDataSource: LoginLocalDataSource): LoginRepository {
         return LoginRepositoryImpl(loginLocalDataSource)
     }

@@ -1,5 +1,6 @@
 package com.mtjin.presentation.views.search
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.mtjin.data.utils.LAST_PAGE
@@ -51,6 +52,7 @@ open class MovieSearchViewModel @Inject constructor(
                         _toastMsg.value = MessageSet.SUCCESS
                     }
                 }, {
+                    Log.d("AAAAA", it.localizedMessage)
                     _toastMsg.value = MessageSet.ERROR
                 })
         )

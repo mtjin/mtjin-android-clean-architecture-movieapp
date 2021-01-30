@@ -5,13 +5,12 @@ import com.mtjin.data.repository.search.remote.MovieRemoteDataSource
 import com.mtjin.data.repository.search.remote.MovieRemoteDataSourceImpl
 import dagger.Module
 import dagger.Provides
-import dagger.Reusable
 import javax.inject.Singleton
 
 @Module
 class RemoteDataModule {
     @Provides
-    @Reusable
+    @Singleton
     fun provideMovieRemoteDataSource(apiInterface: ApiInterface): MovieRemoteDataSource {
         return MovieRemoteDataSourceImpl(apiInterface)
     }
