@@ -19,7 +19,7 @@ fun mapperToMovie(movies: List<MovieEntity>): List<Movie> {
     }
 }
 
-// 이 프로젝트에서는 Domain -> Data 레이어로 리스트를 저장하는 로직은 없어서 사용 안함
+// 이 프로젝트에서는 Domain -> Data 레이어로 모델클래스를 매개변수로 전송하는 일이 없어서 사용은안한다
 fun mapperToMovieEntity(movies: List<Movie>): List<MovieEntity> {
     return movies.toList().map {
         MovieEntity(
