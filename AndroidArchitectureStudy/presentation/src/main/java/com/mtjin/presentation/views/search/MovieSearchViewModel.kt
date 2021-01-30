@@ -2,17 +2,18 @@ package com.mtjin.presentation.views.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.mtjin.data.utils.LAST_PAGE
 import com.mtjin.domain.model.search.Movie
 import com.mtjin.domain.usecase.GetLocalMoviesUseCase
 import com.mtjin.domain.usecase.GetMoviesUseCase
 import com.mtjin.domain.usecase.GetPagingMoviesUseCase
 import com.mtjin.presentation.base.BaseViewModel
-import com.mtjin.data.utils.LAST_PAGE
 import com.mtjin.presentation.utils.NetworkManager
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-open class MovieSearchViewModel(
+open class MovieSearchViewModel @Inject constructor(
     private val getMoviesUseCase: GetMoviesUseCase,
     private val getPagingMoviesUseCase: GetPagingMoviesUseCase,
     private val getLocalMoviesUseCase: GetLocalMoviesUseCase,
