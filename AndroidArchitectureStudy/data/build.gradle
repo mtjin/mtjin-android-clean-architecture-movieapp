@@ -46,6 +46,12 @@ dependencies {
     testImplementation "androidx.room:room-testing:2.2.6"
     kapt "androidx.room:room-compiler:2.2.6"
     implementation 'androidx.room:room-ktx:2.2.6'
+    //Dagger2
+    implementation "com.google.dagger:dagger-android:2.25.4"
+    implementation "com.google.dagger:dagger-android-support:2.25.4"
+    implementation "com.google.dagger:dagger:2.27"
+    kapt "com.google.dagger:dagger-compiler:2.27"
+    kapt "com.google.dagger:dagger-android-processor:2.25.4"
 
     //multi module
     implementation project(':domain')
