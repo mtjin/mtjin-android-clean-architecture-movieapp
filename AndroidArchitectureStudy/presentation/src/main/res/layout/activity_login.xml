@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.mtjin.androidarchitecturestudy.presention.views.login.LoginViewModel" />
+            type="com.mtjin.presentation.views.login.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

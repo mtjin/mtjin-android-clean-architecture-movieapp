@@ -10,7 +10,7 @@
 
         <variable
             name="vm"
-            type="com.mtjin.androidarchitecturestudy.presention.views.search.MovieSearchViewModel" />
+            type="com.mtjin.presentation.views.search.MovieSearchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
