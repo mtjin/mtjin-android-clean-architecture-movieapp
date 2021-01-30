@@ -1,18 +1,28 @@
 package com.mtjin.presentation.views.login
 
+import MyApplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.mtjin.presentation.base.BaseActivity
-import com.mtjin.presentation.views.search.MovieSearchActivity
+import androidx.lifecycle.ViewModelProvider
 import com.mtjin.presentation.R
+import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.databinding.ActivityLoginBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import com.mtjin.presentation.views.search.MovieSearchActivity
+import javax.inject.Inject
 
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
-    private val viewModel: LoginViewModel by viewModel()
+    lateinit var loginComponent: LoginComponent
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+    private val viewModel: LoginViewModel by lazy {
+        ViewModelProvider(this, viewModelFactory).get(LoginViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        loginComponent = (application as MyApplication).appComponent.loginComponent().create()
+        loginComponent.inject(this)
         super.onCreate(savedInstanceState)
         binding.vm = viewModel
         initViewModelCallback()
