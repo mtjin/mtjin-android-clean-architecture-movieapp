@@ -3,10 +3,10 @@ package com.mtjin.data.repository.search
 import com.mtjin.data.mapper.mapperToMovie
 import com.mtjin.data.repository.search.local.MovieLocalDataSource
 import com.mtjin.data.repository.search.remote.MovieRemoteDataSource
+import com.mtjin.data.utils.LAST_PAGE
+import com.mtjin.data.utils.NO_DATA_FROM_LOCAL_DB
 import com.mtjin.domain.model.search.Movie
 import com.mtjin.domain.repository.MovieRepository
-import com.mtjin.domain.utils.LAST_PAGE
-import com.mtjin.domain.utils.NO_DATA_FROM_LOCAL_DB
 import io.reactivex.Flowable
 import io.reactivex.Single
 
