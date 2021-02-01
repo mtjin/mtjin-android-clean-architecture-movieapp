@@ -6,12 +6,17 @@
 
 ---
 
-[mtjin/android-architecture-study-movieapp](https://github.com/mtjin/android-architecture-study-movieapp)
+[이전 프로젝트](https://github.com/mtjin/android-architecture-study-movieapp)
 
 이전에 안드로이드 아키텍처 스터디로 사용했던 프로젝트를 리펙토링하여 사용합니다.
 
 클린아키텍처 관련 영상과 자료를 참고하여 공부하고 프로젝트에 적용해보며 학습합니다. 처음이라 미숙한 점이 많습니다. 😂
 
+
+### 블로그 정리
+
+---
+[블로그 정리](https://youngest-programming.tistory.com/484)
 
 
 ### 아키텍처
