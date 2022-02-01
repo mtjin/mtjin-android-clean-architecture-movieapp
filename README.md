@@ -1,4 +1,4 @@
-# # 안드로이드 클린아키텍처 공부 및 네이버 영화검색 앱 구현 (Main 브랜치 : Clean MVVM + RxJava2 + Koin + Multi Module)
+# # 안드로이드 클린아키텍처 공부 및 네이버 영화검색 앱 구현 (clean-mvvm-multi-module-rxjava-hilt 브랜치 : Clean MVVM + RxJava2 + Hilt + Multi Module)
 
 ---
 
