@@ -9,8 +9,9 @@ import com.mtjin.domain.model.search.Movie
 import com.mtjin.domain.repository.MovieRepository
 import io.reactivex.Flowable
 import io.reactivex.Single
+import javax.inject.Inject
 
-class MovieRepositoryImpl(
+class MovieRepositoryImpl @Inject constructor(
     private val movieRemoteDataSource: MovieRemoteDataSource,
     private val movieLocalDataSource: MovieLocalDataSource
 ) : MovieRepository {

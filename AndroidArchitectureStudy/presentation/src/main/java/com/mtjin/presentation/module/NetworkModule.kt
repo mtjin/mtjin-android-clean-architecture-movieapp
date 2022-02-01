@@ -1,9 +1,21 @@
 package com.mtjin.presentation.module
 
+import android.content.Context
 import com.mtjin.presentation.utils.NetworkManager
-import org.koin.core.module.Module
-import org.koin.dsl.module
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
-val networkModule: Module = module {
-    single { NetworkManager(get()) }
+@InstallIn(SingletonComponent::class)
+@Module
+class NetworkModule {
+    @Provides
+    @Singleton
+    fun provideNetworkManager(@ApplicationContext context: Context): NetworkManager {
+        return NetworkManager(context)
+    }
+
 }

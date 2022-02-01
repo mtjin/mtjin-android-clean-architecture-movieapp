@@ -2,15 +2,17 @@ package com.mtjin.presentation.views.login
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import com.mtjin.presentation.base.BaseActivity
-import com.mtjin.presentation.views.search.MovieSearchActivity
 import com.mtjin.presentation.R
+import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.databinding.ActivityLoginBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import com.mtjin.presentation.views.search.MovieSearchActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
-    private val viewModel: LoginViewModel by viewModel()
+    private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

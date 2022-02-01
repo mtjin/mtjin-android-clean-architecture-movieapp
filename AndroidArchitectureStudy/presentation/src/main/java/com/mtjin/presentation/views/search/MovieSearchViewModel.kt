@@ -1,18 +1,22 @@
 package com.mtjin.presentation.views.search
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.mtjin.data.utils.LAST_PAGE
 import com.mtjin.domain.model.search.Movie
 import com.mtjin.domain.usecase.GetLocalMoviesUseCase
 import com.mtjin.domain.usecase.GetMoviesUseCase
 import com.mtjin.domain.usecase.GetPagingMoviesUseCase
 import com.mtjin.presentation.base.BaseViewModel
-import com.mtjin.data.utils.LAST_PAGE
 import com.mtjin.presentation.utils.NetworkManager
+import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-open class MovieSearchViewModel(
+@HiltViewModel
+class MovieSearchViewModel @Inject constructor(
     private val getMoviesUseCase: GetMoviesUseCase,
     private val getPagingMoviesUseCase: GetPagingMoviesUseCase,
     private val getLocalMoviesUseCase: GetLocalMoviesUseCase,
@@ -50,6 +54,8 @@ open class MovieSearchViewModel(
                         _toastMsg.value = MessageSet.SUCCESS
                     }
                 }, {
+                    Log.d("AAAAAAAAA11", it.message.toString())
+                    Log.d("AAAAAAAAA11", it.localizedMessage.toString())
                     _toastMsg.value = MessageSet.ERROR
                 })
         )
@@ -72,7 +78,12 @@ open class MovieSearchViewModel(
                 }, {
                     when (it.message) {
                         LAST_PAGE -> _toastMsg.value = MessageSet.LAST_PAGE
-                        else -> _toastMsg.value = MessageSet.ERROR
+                        else -> {
+                            _toastMsg.value = MessageSet.ERROR
+                            Log.d("AAAAAAAAA22", it.message.toString())
+                            Log.d("AAAAAAAAA22", it.localizedMessage.toString())
+                        }
+
                     }
                 })
         )
