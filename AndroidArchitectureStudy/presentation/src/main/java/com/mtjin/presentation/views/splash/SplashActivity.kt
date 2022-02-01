@@ -3,15 +3,17 @@ package com.mtjin.presentation.views.splash
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import com.mtjin.presentation.R
 import com.mtjin.presentation.views.login.LoginActivity
 import com.mtjin.presentation.views.search.MovieSearchActivity
-import com.mtjin.presentation.R
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 open class SplashActivity : AppCompatActivity() {
-    private val viewModel: SplashViewModel by viewModel()
+    private val viewModel: SplashViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

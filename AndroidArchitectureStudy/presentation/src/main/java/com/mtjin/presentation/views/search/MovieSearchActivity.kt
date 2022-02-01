@@ -3,17 +3,18 @@ package com.mtjin.presentation.views.search
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.R
+import com.mtjin.presentation.base.BaseActivity
 import com.mtjin.presentation.databinding.ActivityMovieSearchBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MovieSearchActivity :
     BaseActivity<ActivityMovieSearchBinding>(R.layout.activity_movie_search) {
     private lateinit var movieAdapter: MovieAdapter
-    private val viewModel: MovieSearchViewModel by viewModel()
+    private val viewModel: MovieSearchViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

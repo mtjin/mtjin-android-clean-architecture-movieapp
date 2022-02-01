@@ -6,6 +6,8 @@ apply plugin: 'kotlin-kapt'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'dagger.hilt.android.plugin'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -40,13 +42,17 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
     implementation "io.reactivex.rxjava2:rxkotlin:2.3.0"
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.1"
     // Room
     implementation "androidx.room:room-runtime:2.2.6"
     implementation "androidx.room:room-rxjava2:2.2.6"
     testImplementation "androidx.room:room-testing:2.2.6"
     kapt "androidx.room:room-compiler:2.2.6"
     implementation 'androidx.room:room-ktx:2.2.6'
-
+    // Hilt
+    implementation "com.google.dagger:hilt-android:2.35"
+    kapt "com.google.dagger:hilt-compiler:2.35"
     //multi module
     implementation project(':domain')
 }

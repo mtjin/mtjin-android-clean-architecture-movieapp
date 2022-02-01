@@ -4,8 +4,10 @@ import com.mtjin.data.db.MovieDao
 import com.mtjin.data.model.search.MovieEntity
 import io.reactivex.Completable
 import io.reactivex.Single
+import javax.inject.Inject
 
-class MovieLocalDataSourceImpl(private val movieDao: MovieDao) : MovieLocalDataSource {
+class MovieLocalDataSourceImpl @Inject constructor(private val movieDao: MovieDao) :
+    MovieLocalDataSource {
     override fun insertMovies(movies: List<MovieEntity>): Completable =
         movieDao.insertMovies(movies)
 
